@@ -1,0 +1,151 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script>
+$(document).ready(function(){
+$("input[type='radio']").change(function(){
+if($(this).val()=="male"|| $(this).val()=="female")
+{
+$("#otherAnswer").show();
+}
+else
+{
+$("#otherAnswer").hide();
+}
+});
+});
+</script>
+<style>
+body
+{
+margin:0;
+padding:30;
+background-color: #0cbaba;
+background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+background-position:center;
+background-size:cover;
+}
+#loginscr
+{
+width: 400px;
+height: 500px;
+background: rgba(0,0,0,0.5);
+color: #ffffff;
+border-radius: 5px;
+float: right;
+
+}
+h1{
+top: 20px;
+text-align:center;
+font-size: 22px;
+}
+#iele
+{
+height: 40px;
+width:300px;
+color:#ffffff;
+background: transparent;
+font-size:16px;
+border:none;
+border-bottom: 1px solid #ffffff;
+}
+#but1
+{
+ background-color:rgb(26,176,215);
+ width:60;
+ height:35;
+ border-style:none;
+ border-radius:5px;
+ text-align:center;
+ color:white;
+ font-family:sans-serif;
+}
+#but2
+{
+ background-color:orange;
+ width:60;
+ height:35;
+ border-style:none;
+ border-radius:5px;
+ text-align:center;
+ color:white;
+ font-family:sans-serif;
+}
+#reg
+{border:none;
+ border-bottom-style:solid;
+ border-color:white;
+ float: left;
+}
+#addr
+{
+height: 80px;
+width:300px;
+color:#ffffff;
+background: transparent;
+font-size:16px;
+border:none;
+border-bottom: 1px solid #ffffff;
+}
+#country
+{
+height: 40px;
+width:300px;
+color:#00000;
+background: transparent;
+font-size:16px;
+border:none;
+border-bottom: 1px solid #ffffff;
+}
+#otherAnswer
+{height: 40px;
+width:300px;
+color:#ffffff;
+background: transparent;
+font-size:16px;
+border:none;
+border-bottom: 1px solid #ffffff;
+}
+</style>
+</head>
+<body>
+<br><br>
+
+<div id="loginscr">
+<center>
+<h1 id=reg >&emsp;&emsp;Registration form &emsp;&emsp;&emsp;&emsp;  <i  class="fas fa-pen"></i><br></h1>
+<br><br>
+
+&emsp;&emsp;<h4 >Email:&emsp;<input type=email id=iele
+placeholder=" Email or Username" name=emailid></h4><h4 align=left> Password: <input type=password id=iele placeholder="Password" name=pass></h4>
+</center>
+
+&emsp;&emsp;&emsp;&emsp;<input type=checkbox name=remember > Remember me 
+<br>
+<center>
+Address &emsp; <input type=text id=addr>
+<br>
+<br>
+</center>
+<label for="quantity">&emsp;Gender:&emsp;&emsp; </label>
+ 
+<input type=radio name=gender id="male" value="male"> Male  <br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<input type=radio name=gender id="female"value="female"> Female<br>
+
+&emsp;&emsp;<input style="display:none;" type="text" placeholder=" Mobile Number" name="otherAnswer" id="otherAnswer"/><br><br>
+
+&emsp;Country: <select id=country name =opt ><br>
+<option value="India">India 
+<option value="USA">USA
+<option value="UK">UK
+<option value="Australia">Australia
+<option value="Japan">Japan
+<option value="Kenya">Kenya
+</select><br><br>
+
+&emsp;&emsp;&emsp;&emsp;&emsp;<input type=button value="Submit" id=but1> &emsp; <input type=button value="Cancel" id=but2>
+</div>
+</body>
+</html>

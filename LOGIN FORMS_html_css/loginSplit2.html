@@ -1,0 +1,198 @@
+<html>
+<head>
+<script>
+$(document).ready(function()
+{
+$("#rpassword").blur(function()
+{alert("hi")
+validate();
+});
+$("#age").blur(function()
+{alert("hi")
+val();
+});
+
+function validate()
+{alert("hi");
+let x=document.getElementById("ppassword").value;
+let y=document.getElementById("rpassword").value;
+alert ("password entered is"+x+"and the confirm password is"+y);
+if(x!=y)
+{
+alert("Your entered password and confirm password are not same .");
+}
+else
+alert("Welcome");
+}
+function val()
+{
+let a=document.getElementById("age").value;
+
+alert ("age entered is"+a);
+if(a<20)
+{
+alert("UNDERAGE!!");
+}
+else
+alert("Welcome");
+}
+});
+
+</script>
+
+<style>
+body
+{
+  margin: 5;
+  padding: 25;
+  background-position:center;
+  background-size:cover;
+  background-color: #f876de;
+background-image: linear-gradient(315deg, #f876de 0%, #b9d1eb 74%);
+}
+ 
+#loginhere
+{
+ width:470;
+ height:50;
+ text-align:center;
+ color:white;
+ font-family:sans-serif;
+ background-color:blue;
+}
+
+#usernamepassword
+{
+ border:none;
+ border-bottom-style:solid;
+ border-color:rgb(145,147,162);
+ width:200;
+ height:40;
+ border-width:3;
+ font-family:sans-serif;
+ padding-left:5px;
+ text-align:left;
+ color:rgb(145,147,162);
+}
+#age
+{ border:none;
+ border-bottom-style:solid;
+ border-color:rgb(145,147,162);
+ width:200;
+ height:40;
+ border-width:3;
+ font-family:sans-serif;
+ padding-left:5px;
+ text-align:left;
+ color:rgb(145,147,162);
+}
+}
+#rpassword
+{
+ border:none;
+ border-bottom-style:solid;
+ border-color:rgb(145,147,162);
+ width:200;
+ height:40;
+ border-width:3;
+ font-family:sans-serif;
+ padding-left:5px;
+ text-align:left;
+ color:rgb(145,147,162);
+}
+#ppassword
+{
+ border:none;
+ border-bottom-style:solid;
+ border-color:rgb(145,147,162);
+ width:200;
+ height:40;
+ border-width:3;
+ font-family:sans-serif;
+ padding-left:5px;
+ text-align:left;
+ color:rgb(145,147,162);
+}
+#usernamepassword2
+{
+ border:none;
+ border-bottom-style:solid;
+ border-color:rgb(145,147,162);
+ width:200;
+ height:40;
+ float:left;
+ align:left;
+ border-width:3;
+ font-family:sans-serif;
+ padding-left:0px;
+ text-align:left;
+ color:rgb(145,147,162);
+}
+#sernamepassword2
+{border:none;
+ border-bottom-style:solid;
+ border-color:rgb(145,147,162);
+ width:200;
+ height:40;
+ border-width:3;
+ font-family:sans-serif;
+ padding-left:0px;
+ text-align:left;
+ color:rgb(145,147,162);
+}
+#username
+{
+ font-family:sans-serif;
+ padding-left:20px;
+ text-align:left;
+ color:gray;
+
+}
+
+#login
+{
+ background-color:rgb(26,176,215);
+ align-left;
+ width:80;
+ height:35;
+ border-style:none;
+ border-radius:5px;
+ text-align:center;
+ color:white;
+ font-family:sans-serif;
+}
+
+
+#two
+{
+background-color:white;
+width:470;
+height:530;
+border-style:solid;
+}
+
+
+
+</style>
+</head>
+<body bgcolor=white><br><br>
+<center>
+<div id="two" bgcolor=white>
+<h2 id="loginhere">Material Design Sign Up Form</h2>
+<h4 id="username"> First Name&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Last Name</h4>
+<input type=text id="usernamepassword" placeholder="Your First Name" name=uname>
+&emsp;<input type=email id="usernamepassword" placeholder="Your Last Name" name=em>
+<h4 id="username">Gender:<input type=radio name=gender id="male" value="male"> Male&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Age</h4>
+&emsp;&emsp;&emsp;
+<input type=radio name=gender id="username"value="female"> Female&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<input type=text id="age" placeholder="20" name=uname>
+<br>
+&emsp;&emsp;<h4 id="username">Email:&emsp;<br><input type=email id=sernamepassword2
+placeholder="someone@example.com" name=uname></h4>
+<h4 id="username"> New Password&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Confirm Password
+<input type=password id="ppassword" placeholder="*********" name=uname >
+&emsp;<input type=password id="rpassword" placeholder="*********" name=em onclick="validate()"  >
+<br><br><input type=button value="Submit" id=login> 
+</div>
+</center>
+</body>
+</html>
